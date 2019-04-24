@@ -39,16 +39,6 @@
                 <b-button variant="success" block>Create Account</b-button>
               </b-form>
             </b-card-body>
-            <b-card-footer class="p-4">
-              <b-row>
-                <b-col cols="6">
-                  <b-button block class="btn btn-facebook"><span>facebook</span></b-button>
-                </b-col>
-                <b-col cols="6">
-                  <b-button block class="btn btn-twitter" type="button"><span>twitter</span></b-button>
-                </b-col>
-              </b-row>
-            </b-card-footer>
           </b-card>
         </b-col>
       </b-row>

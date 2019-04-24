@@ -137,9 +137,7 @@
 
 export default {
   layout: 'empty',
-  mounted(){
-      this.$router.push('/login')
-  },
+    middleware: 'take-login',
     data(){
       return {
           topCenters: [

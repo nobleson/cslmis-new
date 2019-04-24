@@ -4,6 +4,14 @@
       <b-row class="justify-content-center">
         <b-col md="8">
           <b-card-group>
+            <b-card no-body class="text-white bg-primary py-5 d-md-down-none" style="width:44%">
+              <b-card-body class="text-center">
+                <div>
+                  <img src="~/assets/images/logo.png" alt="Logo">
+                </div>
+                <h1>Corbon</h1>
+              </b-card-body>
+            </b-card>
             <b-card no-body class="p-4">
               <b-card-body>
                 <b-form>
@@ -21,19 +29,8 @@
                     <b-col cols="6">
                       <b-button @click="logIn" variant="primary" class="px-4">Login</b-button>
                     </b-col>
-                    <b-col cols="6" class="text-right">
-                      <b-button variant="link" class="px-0">Forgot password?</b-button>
-                    </b-col>
                   </b-row>
                 </b-form>
-              </b-card-body>
-            </b-card>
-            <b-card no-body class="text-white bg-primary py-5 d-md-down-none" style="width:44%">
-              <b-card-body class="text-center">
-                <div>
-                  <h2>Sign up</h2>
-                  <b-button @click="$router.push('/register')" variant="primary" class="active mt-3">Register Now!</b-button>
-                </div>
               </b-card-body>
             </b-card>
           </b-card-group>
