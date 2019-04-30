@@ -137,9 +137,13 @@
 
 export default {
   layout: 'empty',
+<<<<<<< HEAD
   mounted(){
       this.$router.push('/cslmis/dashboard')
   },
+=======
+    middleware: 'take-login',
+>>>>>>> 0b8bbdc1e7a84b5cbc1f2d9dfad96fed84a72bf2
     data(){
       return {
           topCenters: [
