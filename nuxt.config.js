@@ -1,4 +1,4 @@
-
+import webpack from 'webpack'
 
 module.exports = {
   mode: 'spa',
@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'My title',
+    title: 'CSLMIS | Admin Dashboard',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,6 +18,8 @@ module.exports = {
 
     ]
   },
+
+
 
   /*
   ** Customize the progress-bar color
@@ -55,12 +57,23 @@ module.exports = {
   /*
   ** Build configuration
   */
-  build: {
 
+  build: {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+
+    extend (config, { isDev, isClient }) {
+      plugins:[ 
+        new webpack.ProvidePlugin({
+          '$': 'jquery',
+          '_': 'lodash',
+          jQuery: 'jquery',
+          Vue: ['vue/dist/vue.esm.js', 'default']
+          // ...etc.
+        })
+      ]      
     }
+
   }
 }

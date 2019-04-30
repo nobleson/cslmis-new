@@ -138,7 +138,7 @@
 export default {
   layout: 'empty',
   mounted(){
-      this.$router.push('/login')
+      this.$router.push('/cslmis/dashboard')
   },
     data(){
       return {

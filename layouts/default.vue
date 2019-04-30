@@ -3,7 +3,7 @@
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile />
       <b-link class="navbar-brand" to="#">
-        <div>CSLMIS</div>
+        <div>CORBORN</div>
       </b-link>
       <SidebarToggler class="d-md-down-none" display="lg" />
       <b-navbar-nav class="d-md-down-none">
@@ -45,7 +45,7 @@
     import AppSidebar from '~/components/Sidebar/Sidebar.vue'
 
     export default {
-        middleware: ['check-auth', 'auth'],
+        middleware: ['check-auth'],
         name: 'full',
         components: {
             AsideToggler,
