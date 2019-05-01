@@ -27,6 +27,12 @@ export default {
       name: 'Trades',
       url: '/cslmis/trades',
       icon: 'icon-pencil'
+    },
+    {
+      name: 'Facilities',
+      url: '/cslmis/facility',
+      icon: 'icon-pencil'
     }
+
   ]
 }

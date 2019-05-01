@@ -2,12 +2,16 @@
   <div>
         <b-row>
             <b-col align-self="end"  class="pb-3 pl-auto" cols="12">
+          
                 <b-button @click="$emit('changeComponent','NewArtisan')" class="">Create New</b-button>
+             <hr>
             </b-col>
+            <hr>
          <b-col v-for="(arti,i) in artisans" :key="i" cols="2">
 
             
            <b-button @click="$emit('changeComponent','ArtisanProfile')">Manage</b-button>
+           
             <b-card
             title="Artisan Workshop"
             img-src="/img/pw.png"

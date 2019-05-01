@@ -7,6 +7,7 @@ const _35260f61 = () => interopDefault(import('..\\pages\\register\\index.vue' /
 const _29cfbad0 = () => interopDefault(import('..\\pages\\cslmis\\artisans\\index.vue' /* webpackChunkName: "pages_cslmis_artisans_index" */))
 const _09ef700d = () => interopDefault(import('..\\pages\\cslmis\\centers\\index.vue' /* webpackChunkName: "pages_cslmis_centers_index" */))
 const _38aa27eb = () => interopDefault(import('..\\pages\\cslmis\\dashboard.vue' /* webpackChunkName: "pages_cslmis_dashboard" */))
+const _24564de6 = () => interopDefault(import('..\\pages\\cslmis\\facility\\index.vue' /* webpackChunkName: "pages_cslmis_facility_index" */))
 const _24ca6123 = () => interopDefault(import('..\\pages\\cslmis\\centers\\training-center.vue' /* webpackChunkName: "pages_cslmis_centers_training-center" */))
 const _00f2840e = () => interopDefault(import('..\\pages\\cslmis\\companies\\Companies.vue' /* webpackChunkName: "pages_cslmis_companies_Companies" */))
 const _add6c412 = () => interopDefault(import('..\\pages\\cslmis\\trades\\Trades.vue' /* webpackChunkName: "pages_cslmis_trades_Trades" */))
@@ -106,6 +107,10 @@ export function createRouter() {
       path: "/cslmis/dashboard",
       component: _38aa27eb,
       name: "cslmis-dashboard"
+    }, {
+      path: "/cslmis/facility",
+      component: _24564de6,
+      name: "cslmis-facility"
     }, {
       path: "/cslmis/centers/training-center",
       component: _24ca6123,
